@@ -1,0 +1,1 @@
+证书可以登录商户平台https://pay.weixin.qq.com/index.php/account/api_cert下载

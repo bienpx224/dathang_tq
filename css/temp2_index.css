@@ -1,0 +1,109 @@
+body { min-width: 1200px; font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif; }
+/***********运单跟踪和在线报价***********/
+.xa_search { height: 57px; background: #EEEEEE; padding-top: 13px; box-shadow: 0px 2px 3px #DADCDD; }
+.xa_text { color: #ccc; width: 360px; height: 45px; line-height: 45px; padding-left: 50px; border: none; background: none; position: absolute; left: 0px; outline: none; background: #fff url(../images/temp2/dw.png) no-repeat 10px center; }
+.xa_btn { font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif; width: 162px; height: 45px; line-height: 45px; color: #fff; background: #FF4200; border: none; border-radius: 3px; position: absolute; left: 410px; font-size: 18px; transition: all 0.3s; cursor: pointer; }
+.xa_btn:hover { background-color: #CE3500; }
+.xa_pp { position: relative; }
+.xa_select { position: absolute; left: 630px; width: 160px; height: 45px; color: #333333; border: none; padding-left: 34px; line-height: 45px; }
+.xa_select2 { position: absolute; left: 795px; width: 160px; height: 45px; color: #333333; border: none; padding-left: 34px; line-height: 45px; }
+.xa_text2_1 { position: absolute; left: 806px; width: 130px; height: 45px; color: #333333; border: none; padding-left: 30px; }
+.xa_text2 { position: absolute; left: 960px; width: 100px; height: 45px; color: #333333; border: none; padding-left: 30px; }
+.xa_btn2 { font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif; width: 104px; height: 45px; line-height: 45px; color: #fff; background: #FF4200; border: none; border-radius: 3px; position: absolute; left: 1098px; font-size: 18px; transition: all 0.3s; cursor: pointer; }
+.xa_btn2:hover { background: #CE3500; }
+.xapt { padding-top: 65px; height: 633px; }
+/************公告**********/
+.xa_lmtit { text-align: center; font-size: 35px; background: url("../images/temp2/tit.gif") no-repeat center center; padding-top: 60px; padding-bottom: 50px; }
+.xa_mb { margin-bottom: 30px; }
+.xa_lmtit span { display: block; font-size: 20px; color: #666666; }
+.xa_gg_list { float: left; width: 524px; margin-left: 25px; margin-bottom: 60px; margin-right: 40px; }
+.xa_gg_list_right { background: url("../images/temp2/xian.gif") no-repeat right bottom; float: left; margin-left: 40px; width: 418px; padding-bottom: 10px; transition: all 0.3s; }
+.xa_gg_list_right h2 { font-size: 16px; color: #666666; line-height: 30px; transition: all 0.3s; }
+.xa_gg_list_right h2 a { color: #333; transition: all 0.3s; }
+.xa_gg_list_right p { color: #aaa; font-size: 12px; line-height: 24px; font-family: "宋体", Arial, Helvetica, sans-serif; }
+.xa_gg_list_left { width: 65px; font-size: 55px; color: #333333; text-align: center; float: left; transition: all 0.3s; }
+.xa_gg_list_left span { display: block; width: 55px; font-size: 12px; border-top: 1px solid #D8D8D8; color: #A7A7A7; transition: all 0.3s; }
+.xa_cur .xa_gg_list_left { color: #009FE9; }
+.xa_cur .xa_gg_list_left span { color: #FF0000; }
+.xa_cur .xa_gg_list_right h2 { color: #009FE9; }
+.xa_cur .xa_gg_list_right h2 a { color: #009FE9; }
+.xa_cur .xa_gg_list_right { background: url("../images/temp2/xian_h.gif") no-repeat right bottom; }
+.xa_more { text-align: center; }
+.xa_more a { display: block; background: #CCCCCC; width: 156px; height: 40px; border-radius: 20px; line-height: 40px; color: #fff; font-size: 20px; margin: 0px auto; transition: all 0.3s; }
+.xa_more a:hover { background: #009FE9; text-decoration: none; }
+/*************转运流程啥**************/
+.youshi { height: 580px; background: url("../images/temp2/line.jpg") no-repeat center bottom #eee; }
+.xa_liucheng_jg { width: 116px; background: url("../images/temp2/jt.gif") no-repeat center top #eee; float: left; height: 240px; }
+.xa_liucheng_list { margin: 0px 0px; width: 187px; float: left; height: 240px; text-align: center; }
+.xa_bg1 { background: url("../images/temp2/bg1.png") no-repeat center top #eee; margin-left: 45px; transition: all 0.3s; }
+.xa_bg2 { background: url("../images/temp2/bg2.png") no-repeat center top #eee; transition: all 0.3s; }
+.xa_bg3 { background: url("../images/temp2/bg3.png") no-repeat center top #eee; transition: all 0.3s; }
+.xa_bg4 { background: url("../images/temp2/bg4.png") no-repeat center top #eee; transition: all 0.3s; }
+.xa_bg1:hover { background: url("../images/temp2/bg_h.png") no-repeat center top #eee; }
+.xa_bg2:hover { background: url("../images/temp2/bg_h.png") no-repeat center top #eee; }
+.xa_bg3:hover { background: url("../images/temp2/bg_h.png") no-repeat center top #eee; }
+.xa_bg4:hover { background: url("../images/temp2/bg_h.png") no-repeat center top #eee; }
+.xa_bg1:hover .xa_liucheng_text,
+.xa_bg1:hover .xa_liucheng_text span { color: #c43e27; }
+.xa_bg2:hover .xa_liucheng_text,
+.xa_bg2:hover .xa_liucheng_text span { color: #c43e27; }
+.xa_bg3:hover .xa_liucheng_text,
+.xa_bg3:hover .xa_liucheng_text span { color: #c43e27; }
+.xa_bg4:hover .xa_liucheng_text,
+.xa_bg4:hover .xa_liucheng_text span { color: #c43e27; }
+.xa_liucheng_text { font-size: 20px; color: #BABABA; }
+.xa_liucheng_text span { color: #000; font-size: 16px; margin-left: 10px; font-weight: bold; }
+.xa_liucheng_text p { color: #808080; font-size: 14px; margin-top: 7px; }
+.xa_liucheng_list i { display: block; width: 187px; height: 120px; text-align: center; padding-top: 37px; margin-bottom: 25px; }
+/*************优势**************/
+.xa_tu_text1 { font-size: 16px; color: #4B4B4C; width: 393px; height: 74px; position: absolute; top: 153px; left: 100px; line-height: 26px; font-family: "宋体", Arial, Helvetica, sans-serif; }
+.xa_tu_text2 { font-size: 16px; color: #4B4B4C; width: 393px; height: 74px; position: absolute; top: 153px; right: 135px; line-height: 26px; font-family: "宋体", Arial, Helvetica, sans-serif; }
+.xa_tu_text3 { font-size: 16px; color: #4B4B4C; width: 393px; height: 74px; position: absolute; top: 153px; left: 85px; line-height: 26px; font-family: "宋体", Arial, Helvetica, sans-serif; }
+.xa_tu_pic { margin: 40px 10px; }
+/*************推荐商品**************/
+.scrollBox { width: 1200px; position: relative; padding-top: 10px; }
+.scrollBox .piclist { overflow: hidden; zoom: 1; }
+.scrollBox .ohbox { overflow: hidden; position: relative; width: 1070px; left: 60px }
+.scrollBox { position: relative; overflow: hidden; zoom: 1; }
+.scrollBox .piclist li { float: left; display: inline; width: 256px; margin-right: 17px; }
+.scrollBox .piclist li span { height: 25px; line-height: 25px; display: block; text-align: center; }
+.scrollBox .pageBtn span { background: url(images/bntBg.png) no-repeat; display: block; width: 50px; height: 100px; position: absolute; top: 220px; cursor: pointer; text-indent: -999em; overflow: hidden; }
+.scrollBox .pageBtn .prev { left: 0px; background: url(../images/temp2/left.png) repeat; transition: all 0.3s; }
+.scrollBox .pageBtn .next { right: 0px; background: url(../images/temp2/right.png) repeat; transition: all 0.3s; }
+.scrollBox .pageBtn .prev:hover { background: url(../images/temp2/left_h.png) repeat; }
+.scrollBox .pageBtn .next:hover { background: url(../images/temp2/right_h.png) repeat; }
+.scrollBox .pageBtn .list { overflow: hidden; zoom: 1; margin: 10px 0 0 413px; }
+.scrollBox .pageBtn .list li { background: url(images/bntBg.png); float: left; display: inline; width: 15px; height: 15px; background-position: -86px -57px; cursor: pointer; margin-left: 10px; line-height: 10000px; overflow: hidden; }
+.scrollBox .pageBtn .list li.on { background-position: -114px -57px }
+.xa_sp { background: #FF9326; padding-bottom: 100px; box-shadow: 0px 5px 3px #DADCDD; position: relative; z-index: 2; }
+.xa_xiaotu { position: relative; margin-bottom: 10px; width: 256px; height: 256px; border: 1px solid #FFFFFF; background-color: #FFFFFF;}
+.xa_xiaotu_zhezhao { text-align: center; position: absolute; background: url(../images/temp2/zz.png) repeat; z-index: 999; width: 196px; height: 196px; top: 0px; color: #fff; padding: 30px; }
+.xa_jg { color: #FFFF4D; text-align: center; margin-top: 20px; position: absolute; bottom: 20px; width: 196px; }
+.xa_ff { color: #fff; }
+.xa_ff span { color: #DDDDDD; }
+.xa_ff span.xa_fon16 { font-size: 16px; }
+/*************评论**************/	
+.xa_pinglun { position: relative; background: url("../images/temp2/qq.png") 95% 300px no-repeat #EFF4F7; height: 624px; z-index: 1; padding-top: 69px; }
+/* 切换css */
+.m_wnews { width: 1200px; position: relative; zoom: 1; height: 241px; overflow: hidden; height: 241px; }
+.m_wnews a { color: #2A78B4; }
+.m_wnews strong { background: #D7D7D7; position: absolute; left: 0; top: 0; width: 12px; padding: 3px 8px; height: 54px; overflow: hidden; text-align: center; font-weight: normal; }
+.m_wnews .m_wmore { position: absolute; right: 50px; top: 25px; font-family: "宋体", Arial, Helvetica, sans-serif; }
+.m_wnews .pagesize { position: absolute; right: 5px; top: 3px; }
+.m_wnews .pagesize a { background: url(images/index_newadd.png) no-repeat -21px 0; width: 21px; height: 21px; display: block; overflow: hidden; line-height: 0; text-indent: -999em; margin-bottom: 3px; }
+.m_wnews .pagesize a.prev:hover { background-position: 0 0; }
+.m_wnews .pagesize a.next { background-position: -21px -26px; }
+.m_wnews .pagesize a.next:hover { background-position: 0 -26px; }
+.xa_pingjia_left { border-radius: 100%; margin-right: 25px; }
+.xa_pingjia_text { width: 432px; float: left; position: relative; }
+.xa_pingjia_text p { color: #878787; font-size: 14px; font-family: "宋体", Arial, Helvetica, sans-serif; line-height: 24px; }
+.xa_pingjia_text p:hover { color: #000000; }
+.xa_pingjia_pic { float: left; margin-left: 64px; width: 195px; height: 152px; overflow: hidden; }
+.xa_yh1 { position: absolute; left: -15px; }
+.xa_pingjia_pic img { width: 195px; height: 152px; transition: all 1.2s; -moz-transition: all 1.2s; -webkit-transition: all 1.2s; -o-transition: all 1.2s; }
+.xa_pingjia_pic img:hover { transform: scale(1.2); -moz-transform: scale(1.2); -webkit-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); }
+.xa_pingjia_list { padding: 40px 35px; height: 161px; background: #fff; margin-bottom: 10px; }
+.xa_dh { font-size: 14px; font-family: "宋体", Arial, Helvetica, sans-serif; color: #FF9226; margin-top: 10px; }
+.xa_dh:hover { color: #FF4200; }
+.xa_fj { position: absolute; left: 50%; margin-left: -830px; top: 286px; }
+.xa_qiqiu { position: absolute; left: 50%; margin-left: 623px; top: 286px; }

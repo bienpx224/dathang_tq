@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* 移动版公用样式 */
+body {
+	/*min-width:0px;*/
+}
+
+/* 功能菜单按钮 */
+.navbar-toggle{float:left;}
+.navbar-toggle img{ padding-bottom:2px;}
+
+/* 快捷按钮下拉框的三角头 */
+.header .nav > li > .dropdown-menu:before{display: none!important;}
+.header .nav > li > .dropdown-menu:after{display: none!important;}
+
+/*--------------------------------------------登录,注册---------------------------------------------*/
+.login{
+	width:auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+.gb_member 
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-position: center center;
+	min-height: 0px;
+}

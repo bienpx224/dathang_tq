@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*ie6 由于某些页面没有剪头，所以全部就不显示了，如要显示-2200改为-22*/
+/*未登录*/
+.header_nav .sub li.mm1{  top:-2200px; }
+.header_nav .sub li.mm2{ top:-2200px; }
+
+/*登录后*/
+.header_nav .sub li.mm3{  top:-2200px; }
+.header_nav .sub li.mm4{ top:-2200px; }
+.header_nav .sub li.mm5{ top:-2200px; }
+#goodss .goodss_js .goodss_js_left .gallery li { float:left; width:60px; margin:0 0 5px 15px; height:60px }
+.left_lm{
+	background-image: url(../images/x2.jpg);
+	background-repeat: repeat-y;
+	background-position: top;
+}
+
+.dabei_kefu ul li img{ padding-top:5px;}

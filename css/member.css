@@ -1,0 +1,148 @@
+body {
+	background-color: #FAFAFA !important;
+}
+
+.huilu .txtScroll-top {
+	float:left;
+}
+.huilu font {float:left;
+	font-size:14px; margin-left:20px;
+	color:#919187;line-height: 45px; 
+}
+.huilu .infoList li{
+	line-height: 45px; color:#919187
+}
+
+/*--------------------------------------------推广--------------------------------------------*/
+.tgfz{background:transparent;border: 0px solid #F1F1F1;	width:100%; height:25px;overflow-x:hidden;overflow-y:hidden;  line-height:25px;}
+.tghm{ color:#FF6600; font-size:18px;line-height:25px;}
+
+/*--------------------------------------------地址1--------------------------------------------*/
+.warehousedizhi {
+	background: transparent;
+	border: 1px solid #F1F1F1;
+	width: 250px;
+	height: 25px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	line-height: 25px;
+}
+/*--------------------------------------------地址2--------------------------------------------*/
+.amazon_address_sample {
+	font-size: 12px;
+	margin: 20px 0;
+}
+.amazon_address_sample .h1 {
+	color: #cc6600;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 14px;
+}
+.amazon_address_sample .enterAddressFormTable tr {
+	height: 28px;
+}
+.amazon_address_sample .enterAddressFormTable .enterAddressFieldLabel {
+	text-align: right;
+}
+.amazon_address_sample #learnMoreLink a {
+	color: #004B91;
+	text-decoration: none;
+}
+.amazon_address_sample #learnMoreLink a:hover, .amazon_address_sample #learnMoreLink a:active, .amazon_address_sample #learnMoreLink a:hover span, .amazon_address_sample #learnMoreLink a:active span {
+	color: #E47911;
+	text-decoration: underline;
+}
+.rakuten_address_sample {
+	font-size: 12px;
+	margin: 20px 0;
+}
+.rakuten_address_sample table.appInput {
+	width: 400px;
+	margin: 0 0 0 10px;
+}
+.rakuten_address_sample table.appInput input, .rakuten_address_sample table.appInput label {
+	vertical-align: middle;
+}
+.rakuten_address_sample table.appInput, .rakuten_address_sample table.appInput th, .rakuten_address_sample table.appInput td {
+	border: 1px solid #CCCCAA;
+}
+.rakuten_address_sample table.appInput th, .rakuten_address_sample table.appInput td {
+	padding: 7px 7px 3px 7px;
+	text-align: left;
+	vertical-align: top;
+}
+.rakuten_address_sample table.appInput th {
+	background: #FFFFCE;
+	width: 135px;
+}
+.rakuten_address_sample table.appInput th span {
+	color: #BF0000;
+}
+.rakuten_address_sample table.appInput p.example {
+	color: #666666;
+}
+.rakuten_address_sample table.appInput p.example em {
+	color: #FF6600;
+}
+.rakuten_address_sample table.appInput p, .rakuten_address_sample table.appInput li, .rakuten_address_sample table.appInput ul.liner {
+	margin-bottom: 4px;
+}
+.rakuten_address_sample table.appInput ul.multiInput label, .rakuten_address_sample table.appInput ul.multiInput span {
+	display: inline-block;
+}
+.rakuten_address_sample table.appInput ul.multiInput.email label {
+	width: 110px;
+}
+.rakuten_address_sample table.appInput ul.liner li {
+	display: inline;
+	padding-right: 1em;
+	list-style: none;
+}
+.input-step {
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	line-height: 30px !important;
+	height: 30px;
+}
+.input-block .input-tips {
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	margin-top: 10px;
+	line-height: 180%;
+	color: #f00;
+}
+.input-stepbox {
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	line-height: 30px !important;
+}
+/*--------------------------------------------登录,注册---------------------------------------------*/
+.login{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.gb_member 
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-position: center center;
+	min-height: 600px;
+	margin-top:135px;
+}
+/*--------------------------------------------包裹相关---------------------------------------------*/
+/*包裹操作菜单*/
+.dropdown-menu_baoguo>li>a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: normal;
+	color: #333;
+	white-space: nowrap;
+	text-align:left;
+	font-size: 14px;
+	line-height:22px;
+	height:22px;
+	font-family: "微软雅黑", "宋体";
+}
+
+/*--------------------------------------------替换---------------------------------------------*/

@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* 非中文语种的样式 */
+
+.xa_dropdown-menu { width: 180px; left:-40px; border: 1px solid #DDDDDD;box-shadow:3px 3px 3px black;/*阴影*/  }
+.xa_dropdown-menu li { width: 180px; font-size: 14px;}
+.xa_dropdown-menu li a:hover {width: 200px;}

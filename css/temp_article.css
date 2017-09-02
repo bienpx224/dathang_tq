@@ -1,0 +1,160 @@
+.rebatelist-head b {
+	color: #A8A8A8;
+	font-weight: 500;
+}
+.rebatelist-body ul {
+	margin-right: -10px;
+}
+.rebatelist-body li {
+	display: inline;
+	float: left;
+	width: 278px;
+	margin: 0 30px 30px 0;
+	border: 1px solid #e5e5e5;
+	height:180px;
+}
+.rebatestore {
+	padding: 33px 1px 1px 20px;
+}
+.rebatestore-head {
+	height: 35px;
+	line-height: 35px;
+}
+.rebatestore-head a.rebatestore-logo {
+	display: block;
+	width: 73px;
+	height: 35px;
+	margin: 0 20px 0 15px;
+}
+.rebatestore-head a.rebatestore-logo img {
+	width: 73px;
+	height: 35px;
+	vertical-align: top;
+}
+.rebatestore-num {
+	font-size: 16px;
+	font-weight: 600;
+}
+.rebatestore-num span {
+	color: #FF5B97;
+	font-size: 18px;
+}
+.rebatestore-body {
+	padding: 25px 0 30px;
+	font-family: '����';
+}
+.rebatestore-body p {
+	width: 215px;
+	height: 36px;
+	line-height: 18px;
+	color: #A8A8A8;
+	font-weight: 500;
+	overflow: hidden;
+}
+.rebatestore-foot {
+	height: 34px;
+	line-height: 34px;
+	width:248px;
+	overflow: hidden;
+	border-top:1px solid #d6d6d6;
+	margin:0 0 -20px -1px;
+}
+.rebatestore-foot a.rebate-more {
+	color: #878b97;
+	font-size: 14px;
+	background:#ececef;
+	width:124px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	border-right:1px solid #d6d6d6;
+	margin-bottom:-1px;
+}
+.rebatestore-foot a.zhida-link {
+	background: #ececef;
+	width:123px;
+	color: #878b97;
+	font-size: 14px;
+	text-align: center;
+	height:35px;
+	line-height:35px;
+	margin-bottom:-1px;
+}
+
+
+.w1000 {
+	width: 1000px;
+	margin: 0 auto;
+}
+.merchant .location {
+	border-bottom: 0;
+}
+.merchantlogo {
+	padding: 0 0;
+	margin-top:10px;
+	background: #FFF;
+}
+.merchantlogo-pic {
+	display: block;
+	width: 252px;
+	height: 182px;
+	line-height:180px;
+	margin: 24px 46px 25px 0;
+	border: 1px solid #e5e5e5;
+	background: #FFF;
+	text-align:center;
+}
+.merchantlogo-pic a img{
+	width:252px;
+	height:180px;
+}
+.merchantlogo-text {
+	width: 603px;
+}
+.merchantlogo-text .title {
+	padding: 20px 0;
+	font-weight: normal;
+	border-bottom: 1px dashed #D8D8D8;
+	text-align: left;
+}
+.merchantlogo-text .title span, .con_title span {
+	font-size: 24px;
+}
+.merchantlogo-text .title em {
+	display: inline-block;
+	height: 15px;
+	margin-left: 12px;
+	padding-left: 12px;
+	border-left: 2px solid #5C5A5A;
+	line-height: 15px;
+	color: #FF70A4;
+	font-size: 15px;
+}
+.merchantlogo-text ul {
+	padding: 5px 0 10px;
+	border-bottom: 0px dashed #D6D6D6;
+}
+.merchantlogo-text ul li {
+	line-height: 24px;
+	color: #6b6b6b;
+	font-size: 14px;
+}
+
+.sjdqOutBorder {width:278px; height:180px;position:relative;margin-left:-20px;margin-top:-33px;}
+.sjdqInnerBorder {width:278px; height:180px;line-height:178px;text-align:center;}
+.sjdqTipBox { width:278px;height:180px;vertical-align:middle;background:#66000f;filter:alpha(opacity=80);opacity: 0.8;position:absolute; top:0px;left:0px; z-index:99; visibility:hidden;}
+.sjdqOutBorder:hover .sjdqTipBox {display:table-cell;visibility:visible;text-align:left;overflow:hidden;text-align: middle;vertical-align: middle;}
+.sjdqOutBorder:hover .sjdqTip {overflow:hidden;position:relative; visibility:visible;padding:0 0 0 28px;}
+.sjdqOutBorder:hover .tipInfo {color:#fff;font-size:14px;margin-bottom:5px;visibility:visible;}
+.sjdqOutBorder:hover .tipInfo a{color:#fff;font-size:14px;margin-bottom:5px;visibility:visible;}
+
+.merchantinfobox{margin-top:30px;}
+.merchantinfobox img{
+	border: 5px solid #F3F3F3;
+	text-align: center;
+	display: block;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,227 @@
+.xa_sj{ position:absolute; right:-15px; top:5px;}
+.toolbar-bottom .toolbar-ico.code p.xa_kefu{ text-align:center; color:#fff; height:223px;}
+.toolbar-bottom .toolbar-ico.code p.xa_dianhua{ text-align:center; color:#fff; height:173px;}
+
+.global-toolbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9990;
+	width: 0;
+	height: 100%;
+	-webkit-transition: right .3s ease-in-out 0s;
+    -moz-transition: right .3s ease-in-out 0s;
+    transition: right .3s ease-in-out 0s;
+}
+.global-toolbar.cur{
+	right: 270px;
+}
+.toolbar-bottom .toolbar-ico{
+	position: relative;
+	background-color: #333333;
+	margin-top: 1px;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	cursor: pointer;
+	width: 36px;
+	height: 35px;
+}
+.toolbar-bottom .toolbar-ico>i{
+	position: relative;
+	display: inline-block;
+	background-image: url('../images/temp2/memu.png');
+	background-repeat: no-repeat;
+	z-index:999999999;
+	width: 36px;
+	margin-top: 10px;
+}
+.toolbar-bottom .toolbar-ico>em{
+	position: absolute;
+	display: inline-block;
+	background-color: #333333;
+	height: 35px;
+	width: 62px;
+	top: 0px;
+	left: 0;
+	text-align: center;
+	padding-left: 2px;
+	line-height: 35px;
+	font-style: normal;
+	font-size: 12px;
+	color: #fff;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	z-index: -1;
+	-webkit-transition: left .3s ease-in-out .1s;
+	-moz-transition: left .3s ease-in-out .1s;
+	transition: left .3s ease-in-out .1s;
+}
+.toolbar-bottom .toolbar-ico:hover{
+	background-color: #ff4200;
+}
+.toolbar-bottom .toolbar-ico:hover em{
+	background-color: #ff4200;
+	left: -60px;
+}
+
+.toolbar-bottom .toolbar-ico.online-service>i{
+	height: 16px;
+	background-position: 9px 0px;
+}
+.toolbar-bottom .toolbar-ico.online-service2>i{
+	height:26px;
+	background-position: 9px -293px;
+	margin-top:5px;
+}
+.toolbar-bottom .toolbar-ico.my-collection>i{
+	height: 26px;
+	background-position: 9px -70px;
+	margin-top:5px;
+}
+.toolbar-bottom .toolbar-ico.my-history>i{
+	height:26px;
+	background-position: 9px -114px;
+	margin-top:5px;
+}
+.toolbar-bottom .toolbar-ico.my-shop>i{
+	height:26px;
+	background-position: 9px -222px;
+	margin-top:5px;
+}
+.toolbar-bottom .toolbar-ico.my-warehouse>i{
+	height:26px;
+	background-position: 9px -259px;
+	margin-top:5px;
+}
+.toolbar-bottom .toolbar-ico.my-warehouse2>i{
+	height:26px;
+	background-position: 9px -314px;
+	margin-top:5px;
+}
+.toolbar-bottom .toolbar-ico.my-message>i{
+	height: 26px;
+	background-position: 9px -152px;
+	margin-top: 5px;
+}
+.toolbar-bottom .toolbar-ico.my-message>i.cur{
+	height: 19px;
+	background-position: 9px -64px;
+	margin-top: 7px;
+}
+.toolbar-bottom .toolbar-ico.my-message:hover i{
+	height: 26px;
+	background-position: 9px -147px;
+	margin-top:0px;
+}
+
+.toolbar-bottom{
+	position: absolute;
+	top:40%;
+	right: 0;
+}
+.toolbar-bottom .toolbar-ico{
+	position: relative;
+	background-color: #333333;
+	margin-top: 1px;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	cursor: pointer;
+	width: 36px;
+	height: 35px;
+}
+.toolbar-bottom .toolbar-ico>i{
+	position: relative;
+	display: inline-block;
+	background-image: url('../images/temp2/memu.png');
+	background-repeat: no-repeat;
+	z-index: 2;
+	width: 36px;
+	margin-top: 10px;
+}
+.toolbar-bottom .toolbar-ico:hover{
+	background-color: #ff4200;
+}
+.toolbar-bottom .toolbar-ico.go-top>i{
+	height: 7px;
+	background-position: 10px -190px;
+	margin-top: 13px;
+}
+.toolbar-bottom .toolbar-ico.code>i{
+	height:26px;
+	background-position: 10px -35px;
+	margin-top: 5px;
+}
+.toolbar-bottom .toolbar-ico.code.wechat>i{
+    height: 16px;
+    background-position: 8px 0px;
+    margin-top: 10px;
+}
+.toolbar-bottom .toolbar-ico.feedback>i{
+	height: 16px;
+	background-position: 10px -116px;
+	margin-top: 9px;
+}
+.toolbar-bottom .toolbar-ico.code.my-collection>i{
+    height: 26px;
+    background-position: 8px -66px;
+    margin-top: 0px;
+}
+.toolbar-bottom .toolbar-ico p {
+	font-size:13px; color:#fff;
+  position: absolute;
+  width: 110px;
+  height: 178px;
+  top: -0px;
+  left: -145px;
+  padding: 15px;
+  background-color: #FF4200;
+  display: none;
+  cursor: default;
+  padding: 10px;
+  line-height: 24px;
+}
+.toolbar-bottom .toolbar-ico p span.on{ margin-bottom:10px; margin-top:10px; display:block;}
+.toolbar-bottom .toolbar-ico:hover em{
+	background-color: #ff4200;
+	left: -60px;
+}
+
+.toolbar-bottom .toolbar-ico.code p{
+	display:inline-block;
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	top: 0px;
+	left: 40px;
+	background-color: #FF4200;
+	cursor: default;
+	padding:10px;
+	line-height:24px;
+	-webkit-transition: left .4s ease-in-out .1s;
+	-moz-transition: left .4s ease-in-out .1s;
+	transition: left .4s ease-in-out .1s;
+	 z-index:-1;
+
+	 /*会员中心需要用到以下*/
+	 -webkit-box-sizing:content-box;
+	 box-sizing: content-box;
+}
+.toolbar-bottom .toolbar-ico:hover p{ left:-165px;}
+.toolbar-bottom .toolbar-ico.code p i{ background:url(../images/temp2/sj.png) no-repeat; position:absolute; right:0px; top:0px; width:15px; height:15px;}
+.toolbar-bottom .toolbar-ico.code:hover p{	
+	display: block;
+}
+.toolbar-bottom .toolbar-ico.code p .code img{
+	vertical-align: middle;
+	max-height: 130px;
+	max-width: 130px;
+	margin-bottom:15px;
+}
+.toolbar-bottom .toolbar-ico.code p .text{
+	color: #fff;
+	font-size: 14px;
+	display: block;
+}

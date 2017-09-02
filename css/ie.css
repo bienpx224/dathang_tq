@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*========================所有IE========================*/
+
+
+/* 
+单选按钮 Radio 
+IE下单选无法使用,需要恢复为默认样式
+*/
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]
+{
+	float: left;
+	margin-left: 0px;
+}
+div.radio input { opacity: 1; }

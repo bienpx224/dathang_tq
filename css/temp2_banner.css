@@ -1,0 +1,41 @@
+/* CSS Document */
+
+/*****幻灯片****/
+.swiper-container { width: 100%; height: 100%; }
+.swiper-slide { text-align: center; font-size: 18px; background: #fff; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; height: 600px; }
+.swiper-pagination-bullet { display: inline-block; background: url('../images/temp2/slider_nivo.png') 0 0 no-repeat; width: 25px; height: 25px; }
+.swiper-pagination-bullet { opacity: 1; }
+.swiper-pagination-bullet-active { background: url('../images/temp2/slider_nivo_active.png') 0 0 no-repeat; }
+.swiper-slide span { display: block; width: 100%; height: 600px }
+.swiper-button-prev { background: url(../images/temp2/slider_prev.png) no-repeat left top; position: absolute; margin-left: 35px; }
+.swiper-button-next { background: url(../images/temp2/slider_next.png) no-repeat left top; position: absolute; margin-right: 35px; }
+
+/*图片链接按钮*/
+.xa_banner_text { position: absolute; top: 480px; left: 50%; z-index: 2;margin-left: -100px;}
+.xa_banner_text a.xa_more { width: 150px; height: 25px;  display:block; padding:10px; background: #f43808; margin: 20px 0px; border-radius: 5px; line-height: 28px; text-align: center; color: #fff; transition: all 0.3s; }
+.xa_banner_text a.xa_more:hover { background: #0987c4; text-decoration: none; }
+
+/***********首页登录框***********/
+.xa_login { position: absolute; background: url(../images/tm.png) repeat; border-radius: 5px; width: 260px; height: 320px; z-index: 3; top: 180px; right: 0px; padding: 20px; }
+.xa_banner { height: 600px; background: #ddd; margin-top:35px;}
+.xa_banner_left { width: 330px; background: #ccc; height: 600px; }
+.xa_login-form_title { font-weight: 300; margin-bottom: 25px; text-align: center; font-size: 24px; color: #ffffff; }
+.xa_input-icon { position: relative; }
+.xa_input-icon i { color: #ccc; display: block; position: absolute; margin: 11px 2px 4px 10px; width: 16px; height: 16px; font-size: 16px; text-align: center; }
+.xa_form-control { width: 88%; height: 34px; padding: 0; font-size: 14px; line-height: 1.428571429; vertical-align: middle; border-radius: 4px; font-size: 14px; font-weight: normal; color: #333333; background-color: #ffffff; border: 1px solid #e5e5e5; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+.xa_form-control_yzm { width: 30%; }
+.xa_control-label { display: none; }
+.xa_form-group { margin-bottom: 15px; }
+.xa_input-icon input { padding-left: 12% !important; }
+.xa_btn_login { width: 260px; display: inline-block; padding: 6px 12px; margin-bottom: 10px; font-size: 14px; font-weight: normal; line-height: 1.428571429; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; border: 1px solid transparent; border-radius: 4px; -webkit-user-select: none; color: #fff; background-color: #5bc0de; border-color: #46b8da; float: right; }
+.xa_btn_login:hover { border-color: #FF4200; background-color: #CE3500; }
+.xa_forget-password {clear:both; border-top: 1px solid #E9E9E9; padding-top: 10px; margin-top: 25px; }
+.xa_label-default { background-color: #999 !important; font-size: 12px; padding: 1px 4px 1px 4px; margin-left: 2px; margin-right: 2px; color: #fff; }
+.xa_label-danger { background-color: #ed4e2a !important; font-size: 12px; padding: 1px 4px 1px 4px; margin-left: 2px; margin-right: 2px; color: #fff; }
+.xa_yzm { position: absolute; vertical-align: middle; margin: 0px 5px; }
+.xa_btn_yzm { position: absolute; left: 200px; font-size: 12px; height: 32px; background: #eee; border: none; width: 60px; }
+.AutoLogin_b{ width:15px; height:15px; float:left; display:block;}
+.AutoLogin_t{ color:#FFFFFF; font-size:12px; float:left; display:block; line-height:15px; }
+.AutoLogin_p{ color: #CCCCCC; font-size: 12px; float: left; display: block; line-height: 15px; margin-left: 5px; margin-bottom:20px; }
+
+#msg_code { vertical-align: 5px; position: relativee; }

@@ -1,0 +1,3 @@
+<?php die('forbidden'); //此文件格式有特别要求,因此要单独生成,不能直接获取值?>
+		{"appid":"100353381","appkey":"d832f0731faab4785f1ef35302146135","callback":"http://www.jbuy.com.au/api/login/qq/return.php","scope":"get_user_info,add_share,list_album,add_album,upload_pic,add_topic,add_one_blog,add_weibo,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idolist,add_idol,del_idol,get_tenpay_addr"}
+		

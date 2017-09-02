@@ -1,0 +1,11 @@
+@charset "utf-8";
+body { margin: 0px; }
+.baoguo_body {
+	background-color: #FFFFFF;
+	font-size:16px;
+	margin: 0px;
+	padding:0px;
+	line-height:20px;
+}
+
+.label{margin-right:10px;}

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="zh-CN" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="zh-CN" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-CN" class="no-js">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="MobileOptimized" content="480" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maxmum-scale=1.0,user-scalable=no,target-densitydpi=device-dpi"/>
+
+<meta name="author" content="广西兴奥网络科技有限责任公司  http://www.xingaowl.com">
+<script src="/js/xingao.js" type="text/javascript"></script>
+<script src="/public/ip.php?JS=1"></script>
+<meta name="keywords" content="海淘网站,一键海淘,海淘转运,海淘族,海淘优惠,海淘折扣,海外购物,海外购" />
+<meta name="description" content="竭尽所能让用户享受到更国际化的优质海外购物服务。为广大的消费者提供了全方位海外购物的的解决方案,真正实现了无国界生活。简单的操作流程，优惠的价格，全程数字化管理，安全高效的将包裹转运至全世界各地。" />
+
+<!-- meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！-->
+<title>首页-兴奥转运演示站|中国转运|海淘转运|转运中国|海淘|转运|海外代购</title>
+
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="/bootstrap/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="/bootstrap/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="/bootstrap/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+
+<link href="/m/css/template.css" rel="stylesheet" type="text/css">
+<link href="/css/xingao.css" rel="stylesheet" type="text/css"/>
+<script src="/bootstrap/plugins/jquery-1.10.2.min.js" type="text/javascript"></script> 
+
+<script src="/m/jump.php"></script><!--自动转向对应版本-->
+<script src="/client/jump.php"></script><!--判断是否来自会员的客户端-->
+
+<script src="/js/previewImage.js"></script>
+<!--
+ 图片自动按比例显示
+ 调用：<img src="/images/trans_img_2.png" width="0" height="0" onload="AutoResizeImage(190,150,this)" /> 190,150是宽高
+-->
+
+<!--各类特效JS:必须有,放在footer.php无效-->
+<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.2.js"></script>
+
+</head>
+<body>
+<div class="navi_header"> 
+    <img class="logo" src="/images/logo_m.png">
+    <ul>
+    <li class="border"><a href="/m/html/allnavCN.html">导航</a></li>
+    <li class="border"><a href="/m/search/article.php">搜索</a></li>
+    <li class="border"><a href="/xamember/">会员</a></li>
+    
+    <li class="yuyan"><a href="javascript:void(0)">语言</a>
+    <span>
+	            <a href="/Language/?LGType=1&language=CN" class="hover">中文</a>
+                </span>
+    </li>
+
+    </ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function(e)
+{
+	$(".yuyan").hover(
+		function(){
+			$(this).find("span").show();
+			},
+		function(){
+			$(this).find("span").hide();
+			}
+	);
+});
+</script>
+<!--各种验证代码放此处-->
+<meta property="qc:admins" content="157011404545576016717746375" />
+<link rel="stylesheet" type="text/css" href="/m/css/index.css">
+
+<!-- 幻灯开始 (可以触摸) -->
+<div id="banner" class="swiper-container">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <a href="javascript:void(0);"><img src="/images/notimg.gif"></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="javascript:void(0);"><img src="/images/notimg.gif"></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="javascript:void(0);"><img src="/images/notimg.gif"></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="javascript:void(0);"><img src="/images/notimg.gif"></a>
+    </div>
+  </div>
+  <div class="pagination"></div>
+  
+  <script type="text/javascript" src="/m/js/swiper.js"></script>
+  <script>
+  var detailSwiper = new Swiper('#banner',{
+      autoplay : 5000,//可选选项，自动滑动
+      loop : true,//可选选项，开启循环
+      pagination : '.pagination',
+      calculateHeight : true,
+      updateOnImagesReady : true,
+  });
+  </script>
+</div>
+<!--  幻灯 结束 --> 
+
+<div style="padding:10px;">
+	<form action="/m/yundan/status.php" method="get">
+	        <!--首页-手机版-->
+        <input name="ydh" type="text" class="form-control"  placeholder="请输入您的运单号">
+        <button type="submit" class="btn btn-warning" style="width:100%; margin-top:5px;" > 
+        <i class="icon-search"></i> 运单查询        </button>
+    </form>
+	 <br>
+	
+<form action="/m/yundan/price.php" method="get" >
+	        <!--首页-手机版-->
+        <select name="warehouse" class="form-control select2me" style="width:100%; margin-bottom:5px;" data-placeholder="所在仓库" required onChange="country_show('2','');">
+            <option value='17' >海外仓库</option><option value='14' >美国仓库</option><option value='15' >日本仓库</option>        </select>
+        
+                    <br>
+            <span id="country" style="width:100%; margin-top:5px;"></span>
+		        <br>
+        <input type="text" class="form-control" name="weight" placeholder="包裹重量(kg)" required style="width:50%;"> 
+        
+        <button type="submit" class="btn btn-info" style="width:100%; margin-top:5px;"> <i class="icon-list-alt"></i> 计算运费 </button>
+   
+   
+    	
+    
+    
+</form>
+
+
+
+
+
+<script type="text/javascript">
+//-------------------------------------------------通用部分------------------------------------------
+function limitInput(o)
+{
+	var value=o.value;
+	var min=0;
+	var max=declareValue_max;
+	if(parseInt(value)<min||parseInt(value)>max)
+	{
+		o.value=declareValue_max;
+		document.getElementById('text').innerHTML = "不能超过物品总价值";/*在页面显示*/
+	}else{document.getElementById('text').innerHTML = "";}
+}
+
+function onlyNum()
+{
+	if(!(event.keyCode==46)&&!(event.keyCode==8)&&!(event.keyCode==37)&&!(event.keyCode==39))
+	if(!((event.keyCode>=48&&event.keyCode<=57)||(event.keyCode>=96&&event.keyCode<=105)))
+	event.returnValue=false;
+}
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+//-------------------------------------------------显示国家下拉菜单------------------------------------------
+function country_show(groupid,country)
+{
+		
+	var userid=0;var username='';
+	if(!groupid)
+	{
+		var username=document.getElementsByName("username")[0].value;
+		var userid=document.getElementsByName("userid")[0].value;
+	}
+	
+	var warehouse=document.getElementsByName("warehouse")[0].value ;
+	var xmlhttp_country=createAjax(); 
+	if (xmlhttp_country) 
+	{  
+		xmlhttp_country.open('POST','/public/ajax.php?n='+Math.random(),true); 
+		xmlhttp_country.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xmlhttp_country.send('lx=country&groupid='+groupid+'&username='+username+'&userid='+userid+'&warehouse='+warehouse+'&country='+country+'');
+		xmlhttp_country.onreadystatechange=function() 
+		{  
+			if (xmlhttp_country.readyState==4 && xmlhttp_country.status==200) 
+			{ 
+				document.getElementById('country').innerHTML='<select  class="form-control select2me xa_select2" data-placeholder="请选择" name="country" required style="max-width:240px;" onChange="channel_show();">'+unescape(xmlhttp_country.responseText)+'</select>'; 
+				
+				//以下要放在显示显示国家下拉后面
+				channel_show();//显示渠道下拉
+				
+							}
+		}
+	}
+	}
+</script>
+
+
+<script type="text/javascript">
+//-------------------------------------------------代替证件------------------------------------------
+function cardInstead(typ)
+{
+	var country=document.getElementsByName('country')[0].value; 
+	var s_name=document.getElementsByName('s_name')[0].value; 
+	//var cardYdid=document.getElementsByName('s_mobile_code')[0].value;//旧版
+	
+	var cardYdid;
+	if(document.getElementsByName('cardYdid').value)	
+	{
+		cardYdid=document.getElementsByName('cardYdid')[0].value;
+	}else{
+		cardYdid='';
+	}
+	
+	var xmlhttp=createAjax(); 
+	if (xmlhttp) 
+	{
+		xmlhttp.open('POST','/public/ajax.php?n='+Math.random(),true); 
+		xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xmlhttp.send('lx=cardInstead&typ='+typ+'&country='+country+'&s_name='+s_name+'&cardYdid='+cardYdid+'');
+
+		xmlhttp.onreadystatechange=function() 
+		{  
+			if (xmlhttp.readyState==4 && xmlhttp.status==200) 
+			{ 
+				//输出:innerHTML输出到页面；value输出到文本框；
+				document.getElementById('cardInstead_msg').innerHTML=unescape(xmlhttp.responseText); 
+			}
+		}
+	}
+}
+</script>
+
+
+
+<script type="text/javascript">
+//-------------------------------------------------预估费用(会员表单)------------------------------------------
+function calc()
+{
+	//下面是获取单选按钮值
+	var eless = document.getElementsByName("op_ydfee2");
+	for(var i=0;i<eless.length;i++)
+	{
+	 if(eless[i].checked)
+	  {
+	  var  op_ydfee2=eless[i].value;break;
+	  }
+	}
+	if (typeof(op_ydfee2) == "undefined"){var op_ydfee2=0;}//判断
+	
+	
+	var eless = document.getElementsByName("op_bgfee1");
+	for(var i=0;i<eless.length;i++)
+	{
+	 if(eless[i].checked)
+	  {
+	  var  op_bgfee1=eless[i].value;break;
+	  }
+	}
+	if (typeof(op_bgfee1) == "undefined"){var op_bgfee1=0;}//判断
+	
+	
+	var eless = document.getElementsByName("op_ydfee1");
+	for(var i=0;i<eless.length;i++)
+	{
+	 if(eless[i].checked)
+	  {
+	  var  op_ydfee1=eless[i].value;break;
+	  }
+	}
+	if (typeof(op_ydfee1) == "undefined"){var op_ydfee1=0;}//判断
+	
+	var eless = document.getElementsByName("op_bgfee2");
+	for(var i=0;i<eless.length;i++)
+	{
+	 if(eless[i].checked)
+	  {
+	  var  op_bgfee2=eless[i].value;break;
+	  }
+	}
+	if (typeof(op_bgfee2) == "undefined"){var op_bgfee2=0;}//判断
+
+	var country=document.getElementsByName('country')[0].value;
+	var bg_number=document.getElementsByName('bg_number')[0].value;
+	var weight=document.getElementsByName('weightEstimate')[0].value;
+	var channel=document.getElementsByName('channel')[0].value;
+	var userid=;
+	var insurevalue= $('#insurevalue').val();
+	var baoguo_hx_fee=document.getElementsByName('baoguo_hx_fee')[0].value;
+	var warehouse=document.getElementsByName('warehouse')[0].value;
+
+	if(!channel)
+	{ 
+		document.getElementById('msg_fee').innerHTML='请选择渠道';//总费用
+		document.getElementById('msg_fee_channel').innerHTML='请选择渠道';//单运费
+		return false;
+	}
+	if(parseFloat(weight)<=0)
+	{ 
+		document.getElementById('msg_fee').innerHTML='请填写重量';//总费用
+		document.getElementById('msg_fee_channel').innerHTML='请填写重量';//单运费
+		return false;
+	}
+	
+	var xmlhttp_fee=createAjax(); 
+	if (xmlhttp_fee) 
+	{ 
+		xmlhttp_fee.open('POST','/xingao/yundan/call/calc.php?n='+Math.random(),true); 
+		xmlhttp_fee.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xmlhttp_fee.send('yf=1&warehouse='+warehouse+'&country='+country+'&weight='+weight+'&op_bgfee1='+op_bgfee1+'&op_bgfee2='+op_bgfee2+'&op_ydfee1='+op_ydfee1+'&op_ydfee2='+op_ydfee2+'&channel='+channel+'&userid='+userid+'&insurevalue='+insurevalue+'&baoguo_hx_fee='+baoguo_hx_fee+'&bg_number='+bg_number+'');
+		
+		xmlhttp_fee.onreadystatechange=function() 
+		{  
+			if (xmlhttp_fee.readyState==4 && xmlhttp_fee.status==200) 
+			{ 
+				var all_fee=unescape(xmlhttp_fee.responseText);
+				var arr=all_fee;arr=arr.split(",");//字符串转数组
+				document.getElementById('msg_fee').innerHTML=arr[0];//总费用
+
+				var zhi=arr[1];if (typeof(zhi) == "undefined"){zhi=arr[0];}
+				document.getElementById('msg_fee_channel').innerHTML=zhi;//单运费
+				
+			}
+		}
+	}
+}
+</script>
+
+
+
+
+
+<!-----------------------------------------物品JS代码部分---------------------------------------------------->
+<script src="/js/AntongJQ.js" type="text/javascript"></script>
+<script type="text/javascript">
+function delProductDetail(node) 
+{
+	$(node).parent().parent().remove();
+	if ($('[name=hiddenType]').val() == '1') {
+		autoHeight();
+	}
+	CalcDeclareValue();
+}
+
+
+function addProductDetail(node) {
+
+	$tr = $(node).parent().parent().removeClass().clone();
+	$table = $(node).parent().parent().parent();
+	$tr.find('input').val('');
+	$tr.find('[name=deleteHref]').show();
+	$tr.appendTo($table);
+	if ($('[name=hiddenType]').val() == '1') {
+		autoHeight();
+	}
+	$bigNode = $('#tableProduct tr:last').find("#ProductType");
+	ChangeProductBigType($bigNode);
+}
+function addEditProductDetail(node) {
+
+	$tr = $(node).parent().parent().removeClass().clone();
+	$table = $(node).parent().parent().parent();
+	$tr.find('input').val('');
+	$tr.find('[name=deleteHref]').show();
+	$tr.appendTo($table);
+	if ($('[name=hiddenType]').val() == '1') {
+		autoHeight();
+	}
+	$bigNode = $('#table1 tr:last').find("#ProductTypeC");
+	ChangeEditProductBigType($bigNode);
+}
+
+function CalcTotalPrice(node) {
+	$tr = $(node).parent().parent();
+	var num = $.trim($tr.find('[id=productNum]').val());
+	if (isNaN(num)) {
+		num = 0;
+		$tr.find('[id=productNum]').val(num);
+	}
+	var pri = $.trim($tr.find('[id=productPrice]').val());
+	if (isNaN(pri)) {
+		pri = 0;
+		$tr.find('[id=productPrice]').val(pri);
+	}
+
+
+	$tr.find('[id=productTotalPrice]').val(accMul(num, pri));
+}
+
+var declareValue_max = document.getElementsByName('declarevalue')[0].value;
+function CalcDeclareValue() 
+{
+	var describe = "";
+	var declareValue = 0;
+	var weightEstimate = 0;
+	var productName = "";
+	var brand = "";
+	var num = "";
+	var totalPrice = 0;
+	var product_7 = 0;
+	$('#tableProduct tr').not(':first').each(function () {
+		productName = $(this).find("#ddlSmallType").val();
+		brand = $(this).find('[id=productBrand]').val();
+		num = $(this).find('[id=productNum]').val();
+		totalPrice = $(this).find('[id=productTotalPrice]').val();
+		product_7 = $(this).find('[id=product_7]').val();
+
+		describe = describe+" " + brand+" " + productName + " * " + num + "；";
+		
+		declareValue = parseFloat(accAdd(declareValue ,(totalPrice == null ? 0 : totalPrice)));
+		declareValue_max = declareValue;
+		weightEstimate = accAdd(weightEstimate ,(product_7 == null ? 0 : product_7));
+	});
+	
+	//把'替换为中文’
+	var reg=new RegExp("'","g"); //创建正则RegExp对象  
+	var stringObj=describe;  
+	var describe=stringObj.replace(reg,"’");  
+
+	$('[id=goodsdescribe]').text(describe);
+	$('[id=declarevalue]').val(declareValue);
+	 lblinsureamounte.innerHTML=declareValue;
+	$('[id=declareValue_max]').val(declareValue_max);
+   //$('[id=weightEstimate]').val(weightEstimate); //由于库外下单物品也没有重量，就不用自动计算重量
+}
+
+</script>      
+
+
+
+
+
+
+
+<script type="text/javascript">
+//-----------------------------------------显示该渠道是否要上传证件--------------------------
+function shenfenzheng(){
+	var whid=document.getElementsByName('warehouse')[0].value;
+	var channel=document.getElementsByName('channel')[0].value;
+	
+	var xmlhttp_sfz=createAjax(); 
+	if (xmlhttp_sfz) 
+	{ 
+		xmlhttp_sfz.open('POST','/public/ajax.php?n='+Math.random(),true); 
+		xmlhttp_sfz.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xmlhttp_sfz.send('lx=shenfenzheng&whid='+whid+'&channel='+channel+'');
+
+		xmlhttp_sfz.onreadystatechange=function() 
+		{  
+			if (xmlhttp_sfz.readyState==4 && xmlhttp_sfz.status==200) 
+			{ 
+				var zhi=unescape(xmlhttp_sfz.responseText);
+				if (typeof(zhi) == "undefined"){zhi=0;}
+				
+				if(parseInt(zhi)==1){
+					document.getElementById("sfz_hide").style.display="block";
+					document.getElementsByName("s_shenfenhaoma")[0].setAttribute("required",true);
+				}else{
+					document.getElementById("sfz_hide").style.display='none';
+					document.getElementsByName("s_shenfenhaoma")[0].removeAttribute("required");
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+//-------------------------------------------------保价相关计算------------------------------------------
+function calc_insurance(){
+	var whid=document.getElementsByName('warehouse')[0].value;
+	var channel=document.getElementsByName('channel')[0].value;
+	var declarevalue=parseFloat(document.getElementsByName('declarevalue')[0].value);//物品价值
+	var insureamount=parseFloat(document.getElementsByName('insureamount')[0].value);//物品保价
+	
+	//if(insureamount<=0||declarevalue<=0){return false;}
+	
+	//baoxian_ts提示
+	if (parseFloat(whid)<=0||!whid||parseFloat(channel)<=0||!channel)
+	{
+		document.getElementById("baoxian_ts").innerHTML='<font class="red2">请先选择仓库和渠道</font>';
+		return false;
+	}else{
+		document.getElementById("baoxian_ts").innerHTML='不买保险请留空或填0，不能超过发票上的价值；';
+	}
+
+
+	//物品保价
+	if(insureamount>declarevalue)
+	{
+		document.getElementsByName("insureamount")[0].value=declarevalue;
+		insureamount=declarevalue;
+	}
+	
+	
+	var xmlhttp_insu=createAjax(); 
+	if (xmlhttp_insu) 
+	{ 
+		xmlhttp_insu.open('POST','/public/ajax.php?n='+Math.random(),true); 
+		xmlhttp_insu.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xmlhttp_insu.send('lx=insurance&whid='+whid+'&channel='+channel+'&insureamount='+insureamount+'');
+		
+		xmlhttp_insu.onreadystatechange=function() 
+		{  
+			if (xmlhttp_insu.readyState==4 && xmlhttp_insu.status==200) 
+			{ 
+				var all_fee=unescape(xmlhttp_insu.responseText);
+				var arr = all_fee;arr =arr.split(",");//字符串转数组
+				
+				var zhi=arr[0];if (typeof(zhi) == "undefined"){zhi=arr[0];}
+				document.getElementById('msg_insurevalue').innerHTML=zhi;//需付保价费
+				document.getElementById('insurevalue').value=zhi;
+				
+				var zhi=arr[1];if (typeof(zhi) == "undefined"){zhi=arr[0];}
+				document.getElementById('baoxian_1').innerHTML=zhi;//物品价值在之内
+				
+				var zhi=arr[2];if (typeof(zhi) == "undefined"){zhi=arr[0];}
+				document.getElementById('baoxian_2').innerHTML=zhi;//保险率为
+
+				var zhi=arr[3];if (typeof(zhi) == "undefined"){zhi=arr[0];}
+				document.getElementById('baoxian_3').innerHTML=zhi;//超过则为
+				
+				var zhi=arr[4];if (typeof(zhi) == "undefined"){zhi=arr[0];}
+				document.getElementById('baoxian_4').innerHTML=zhi;//保价区间-起
+				
+				var zhi=arr[5];if (typeof(zhi) == "undefined"){zhi=arr[0];}
+				document.getElementById('baoxian_5').innerHTML=zhi;//保价区间-止
+				
+				
+				//其他处理-----------------------------------------------------------
+				
+				//小于保价区间
+				if (insureamount<parseFloat(arr[4]))
+				{
+					document.getElementsByName('insureamount')[0].value=arr[4];
+				}
+			
+				
+				//大于保价区间
+				if (insureamount>parseFloat(arr[5]))
+				{
+					document.getElementsByName('insureamount')[0].value=arr[5];
+				}
+				
+				//lblinsureamounte最大保价提示
+				if(declarevalue>0)
+				{
+					if(declarevalue<parseFloat(arr[4])){//小于保价区间-起
+						document.getElementById("lblinsureamounte").innerHTML=arr[4];
+					}else if(declarevalue>parseFloat(arr[5])){//大于保价区间-止
+						document.getElementById("lblinsureamounte").innerHTML=arr[5];
+					}else{//小于最小保价区间
+						document.getElementById("lblinsureamounte").innerHTML=declarevalue;
+					}
+				}else{
+					document.getElementById("lblinsureamounte").innerHTML=0;
+				}
+				
+				
+				//baoxian_ts提示
+				if (parseFloat(arr[4])<=0&&parseFloat(arr[5])<=0)
+				{
+					document.getElementById("baoxian_ts").innerHTML='<font class="red2">该渠道暂时不支持购买保险</font>';
+				}
+				
+			}
+		}
+	}
+}
+
+
+
+
+
+
+//--------------------------------------渠道重量限制---------------------------
+function channel_weight_limit()
+{
+   var warehouse=document.getElementsByName("warehouse")[0].value ;
+   var channel=parseInt(document.getElementsByName("channel")[0].value);
+   var weight=parseInt(document.getElementsByName("weightEstimate")[0].value);
+ 
+	var xmlhttp_weight_limit=createAjax(); 
+	if (xmlhttp_weight_limit) 
+	{  
+		xmlhttp_weight_limit.open('POST','/public/ajax.php?n='+Math.random(),true); 
+		xmlhttp_weight_limit.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xmlhttp_weight_limit.send('lx=channel_weight_limit&warehouse='+warehouse+'&channel='+channel+'&weight='+weight+'');
+		
+		xmlhttp_weight_limit.onreadystatechange=function() 
+		{  
+			if (xmlhttp_weight_limit.readyState==4 && xmlhttp_weight_limit.status==200) 
+			{ 
+				var ret=unescape(xmlhttp_weight_limit.responseText); 
+				if(ret!=0)
+				{
+				   if(confirm(ret))
+				   {
+					 receive_check();//收件人资料验证 //receive_check有提交事件
+					 return true;
+				   }else{
+					 return false;
+				   }
+					
+				}else{
+					receive_check();//收件人资料验证 //receive_check有提交事件
+					
+				}
+			}
+		}
+	}
+   
+}
+
+
+
+
+
+
+//-------------------------------------------------验证收件人资料------------------------------------------
+function receive_check()
+{
+	var name=document.getElementsByName("s_name")[0].value ;
+	var country=document.getElementsByName("country")[0].value ;
+	var mobile=document.getElementsByName("s_mobile")[0].value ;
+	var zip=document.getElementsByName("s_zip")[0].value ;
+	var add_dizhi=document.getElementsByName("s_add_dizhi")[0].value ;
+	var shenfenhaoma=document.getElementsByName("s_shenfenhaoma")[0].value ;
+	document.getElementById('submit_none').disabled=true;
+	
+	var xmlhttp_receive=createAjax(); 
+	if (xmlhttp_receive) 
+	{  
+		xmlhttp_receive.open('POST','/public/ajax.php?n='+Math.random(),true); 
+		xmlhttp_receive.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xmlhttp_receive.send('lx=receive_check&name='+name+'&country='+country+'&mobile='+mobile+'&zip='+zip+'&add_dizhi='+add_dizhi+'&shenfenhaoma='+shenfenhaoma+'');
+		
+		xmlhttp_receive.onreadystatechange=function() 
+		{  
+			if (xmlhttp_receive.readyState==4 && xmlhttp_receive.status==200) 
+			{ 
+				var ret=unescape(xmlhttp_receive.responseText); 
+				if(ret!=0)
+				{
+					return alert(ret); 
+				}else{
+					document.getElementById('submit_none').disabled=false;
+					document.getElementById ('submit_none').click ();
+					document.getElementById('submit_none').disabled=true;
+				}
+			}
+		}
+	}
+	
+}
+
+
+
+
+</script>
+<script language="javascript">
+	$(function(){  
+		country_show('2','');  //显示国家下拉
+	});
+</script>
+</div> 
+
+
+<!---->
+		
+<div class="clear">
+  <div class="xa_lmtit">新闻公告<span><a href="/html/xwgg/indexCN.html">More></a></span></div>
+  <ul class="NewsList">
+
+		<li><a href="/m/html/html/xwgg/zygg/2016-10-27/103CN.html" style="color:#ff0000" target="_blank">&raquo; 发现低价盗版源码时请各位注意</a></li>
+		
+		<li><a href="/m/html/html/xwgg/zygg/2015-11-23/13CN.html" style="color:" target="_blank">&raquo; 新地址启用公告</a></li>
+		
+		<li><a href="/m/html/html/xwgg/rdxw/2015-11-23/11CN.html" style="color:" target="_blank">&raquo; iPhone变报纸？EMS登门道歉赔偿</a></li>
+		
+		<li><a href="/m/html/html/xwgg/zygg/2015-11-23/2CN.html" style="color:" target="_blank">&raquo; 关于澳大利亚禁止转运的物品明细声明</a></li>
+		
+		<li><a href="/m/html/html/xwgg/rdxw/2015-11-23/12CN.html" style="color:" target="_blank">&raquo; 双十一狂欢节后快递车着火</a></li>
+		
+  </ul>
+</div> 
+<!---->
+
+	
+<div class="xa_lmtit">转运流程</div>
+<div class="clear" align="center"><img src="/m/images/i1.gif" style="width:100%"/></div> 
+
+<div class="xa_lmtit">我们的优势</div>
+<div class="clear" align="center"><img src="/m/images/i2.gif" style="width:100%"/></div> 
+
+<!---->
+<div class="clear">
+  <div class="xa_lmtit">在线商城<span><a href="/html/zxsc/indexCN.html">More></a></span></div>
+   <div class="IndexImgList">
+	<ul>
+	<!--商品列表-开始-->
+	
+ 
+		<li>
+		<a href="/m/mall/show.php?mlid=24" target="_blank" title="天科耐摔遥控飞机直升机充电动摇控航模型超大男孩儿童玩具飞行器">
+		<img src="/upxingao/2015-12-03/100_30d99bb8d3384f3c16c7fcc8bb7e6fc0.jpg"/>
+		<p>50 元</p>
+		天科耐摔遥控飞机直升机充		</a>
+		</li>
+		 
+		<li>
+		<a href="/m/mall/show.php?mlid=7" target="_blank" title="冬季珊瑚绒儿童睡衣加厚夹棉男童女童宝宝法兰绒睡衣小孩家居服">
+		<img src="/upxingao/2015-11-26/100_bca129d1241fe7768f4d2a37e71c63d1.jpg"/>
+		<p>49 元</p>
+		冬季珊瑚绒儿童睡衣加厚夹		</a>
+		</li>
+		 
+		<li>
+		<a href="/m/mall/show.php?mlid=33" target="_blank" title="实用创意小礼品公司活动奖送朋友同学顾客新奇特活动赠品礼物批发">
+		<img src="/upxingao/2015-12-03/100_784113900c5022763701c13798c77d16.jpg"/>
+		<p>12 元</p>
+		实用创意小礼品公司活动奖		</a>
+		</li>
+		 
+		<li>
+		<a href="/m/mall/show.php?mlid=15" target="_blank" title="生日礼物创意礼品家居小摆件萌萌狗送女生女孩好朋友闺蜜特别精美">
+		<img src="/upxingao/2015-12-03/100_6034433ae67e8da2474bc435897736e7.jpg"/>
+		<p>30 元</p>
+		生日礼物创意礼品家居小摆		</a>
+		</li>
+		 
+		<li>
+		<a href="/m/mall/show.php?mlid=16" target="_blank" title="创意小实用送男生送女生闺蜜同学生日感恩节礼物送女友送男友精美">
+		<img src="/upxingao/2015-12-03/100_2946086d857b10121e0d34854f2c49f4.jpg"/>
+		<p>28 元</p>
+		创意小实用送男生送女生闺		</a>
+		</li>
+		 
+		<li>
+		<a href="/m/mall/show.php?mlid=17" target="_blank" title="小礼品批发定制logo创意实用精美礼物婚礼回礼">
+		<img src="/upxingao/2015-12-03/100_c0f51d26233a60495c4e17493cf98f12.jpg"/>
+		<p>15 元</p>
+		小礼品批发定制logo创意实		</a>
+		</li>
+			<!--商品列表-结束-->	
+	</ul>
+  </div>
+</div>
+<!---->
+
+
+
+<div class="foot clearfix">
+<!--版权所有 © 2017 兴奥转运演示站  -->
+Copyright © Zy All Right Reserved.
+</div>
+
+	<!--流量统计代码--> 
+      <script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?2fe2c4e3fb9eeb062f28440d453bdd2b";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+		})();
+	 </script> 
+
+<script src="/bootstrap/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--在线客服--> 
+<div class="global-toolbar">
+    <div class="toolbar-bottom">
+    	<div class="toolbar-ico code wechat"> <i></i>
+  <p class="xa_kefu">
+    <span class="xa_sj"><img src="/images/sj.png"></span>
+	
+    <span class="text">业务经理</span>
+    <span class="code"> QQ：993836325</span>
+	
+    <span class="text">售前客服</span>
+    <span class="code"> QQ：1526451112</span>
+	
+  </p>
+</div>
+<div class="toolbar-ico code"> <i></i>
+  <p>
+    <span class="xa_sj"><img src="/images/sj.png"></span>
+    <span class="code">微信号码：goimtt</span>
+  </p>
+</div>
+<div class="toolbar-ico code my-collection"> <i></i>
+  <p class="xa_dianhua">
+    <span class="xa_sj"><img src="/images/sj.png"></span>
+
+    <span class="on">系统咨询:<br/><img src="/images/dh.png"><br/></span>
+
+  </p>
+</div>        <br>
+        <a href="/m/yundan/price.php" target="_blank">
+            <div id="my-history" class="toolbar-ico my-history">
+                <i></i>
+                <em>在线报价</em>
+            </div>
+        </a>
+       <a href="/m/yundan/status.php" target="_blank">
+            <div class="toolbar-ico my-message">
+                <i></i>
+                <em>运单跟踪</em>
+            </div>
+        </a>
+        <div id="go_top" class="toolbar-ico go-top">
+            <i></i>
+            <em>返回顶部</em>
+        </div>
+    </div>
+
+<link href="/css/temp2_service.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+$(document).ready(function(e)
+{
+	$(".xa_gg_list").hover(
+		function(){
+			$(this).addClass("xa_cur");
+			},function(){
+			$(this).removeClass("xa_cur");
+			}
+	);
+	$(".xa_mm").hover(
+		function(){
+			$(this).css("color","#c43e27");
+			},
+			function(){
+			$(this).css("color","#4B4B4C");
+			}
+	);
+	$(".xa_zz").css("display","none");
+	$(".xa_xiaotu").hover(
+		function(){
+			$(this).find(".xa_zz").addClass("animated flipInX");
+			$(this).find(".xa_zz").css("display","block");
+			},
+		function(){
+			$(this).find(".xa_zz").removeClass("animated flipInX");
+			$(this).find(".xa_zz").css("display","none");
+			}
+	);
+	$("#go_top").click(function(){
+		$("html,body").animate({scrollTop: 0}, 500);	
+	});
+	
+});
+</script>
+</div>
+<!--在线客服结束-->
+</body>
+</html>

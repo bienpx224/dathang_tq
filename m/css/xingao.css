@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* 公用样式 */
+
+/*不显示内页顶图*/
+/*
+.class_banner{ background:url('') no-repeat center top!important; height:20px!important;}
+*/
+.white {
+	color: #FFFFFF;
+}
+.white a {
+	color: #FFFFFF;
+}
+.gray {
+	color: #666666;
+}
+.gray a {
+	color: #333333;
+	
+}
+.gray2{
+	color: #999999;
+}
+.gray2a ,.gray2a  a{
+	color: #999999;
+}
+
+.gray_bg {
+	background-color: #CCCCCC;
+}
+.gray_prompt {
+	color: #666666;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+}
+.gray_prompt a {
+	color: #666666;
+	font-size: 12px;
+	line-height: 20px;
+}
+.gray_prompt2 {
+	color: #999999;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+}
+.gray_prompt3 {
+	color: #666666;
+	font-size: 12px;
+	line-height: 20px;
+}
+.red {
+	color: #FF0000;
+}
+.red a {
+	color: #FF0000;
+}
+.red2 {
+	color: #FF6600;
+}
+.red2 a {
+	color: #FF6600;
+}
+.red2_input {
+	border: 1px solid #FF6600; padding:3px;color: #666666;
+}
+
+
+.black 
+{
+	color: #000000;
+}
+
+.xats{
+	color: #999999;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: left;
+	padding:10px;
+}
+
+
+.cm_reply{
+	border: 1px dashed #CCCCCC;
+	background-color: #F4F4F4;
+	margin: 10px;
+	padding: 5px;
+	color: #939393;
+}
+.cm_manage {
+	border: 1px solid #FF6E00;
+	background-color: #FFEBDC;
+}
+
+.imgslist img{
+	width:120px;
+	border: 1px solid #CCCCCC;
+	padding: 2px;
+	margin: 5px;
+}
+
+
+.modal_border{
+	border-bottom: 1px dotted #E3E3E3;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+.modal_border strong{
+	color: #222222;
+	font-weight: normal;
+}
+.modal_border a{
+	color: #333333;
+	font-weight: normal;
+}
+
+
+.dataTables_info {
+    color: #999999;
+  }
+
+
+td, th {
+	padding: 5px;
+}
+
+
+.operation a:link {
+	color: #3399FF;
+}
+.operation a:visited {
+	color: #999999;
+}
+.operation a:hover {
+	color: #FF0000;
+}
+
+
+.input_txt_red{
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+	
+	font-size: 14px;
+	border: 1px solid #B94A48;
+	background-color: #fff;
+}
+.input_txt_gray{
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+
+	font-size: 14px;
+	border: 1px solid #CCCCCC;
+	background-color: #fff;
+}
+
+.gray_border_table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 1px solid #CCCCCC;
+}
+.gray_border_table>tbody>tr>td {
+	border: 1px solid #CCCCCC;
+}
+.tableborder {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 1px solid #EAEAEA;
+}
+.tableborder>tbody>tr>td {
+	border: 1px solid #EAEAEA;
+}
+
+.top_nav a{ margin-left:5px; margin-right:5px;}
+.show_price{color:#FF6600; font-size:20px; line-height:30px;}
+.show_weight{
+	color: #333333;
+	font-size:18px; line-height:25px;}
+.page_ny {
+	background-color: #FAFAFA;
+	margin-left:auto; margin-right:auto; 
+	min-width:1000px;/*主要用作到:包裹预报*/
+}
+
+
+/*页面弹出支付/包裹操作*/
+.showbox{width:0px;height:0px;position:absolute;right:0;top:0;z-index:999999;}
+#box_bg{background-color:#999999;position:absolute;z-index:10000;left:0;top:0;display:none;width:100%;height:100%;opacity:0.8;filter: alpha(opacity=80);-moz-opacity: 0.8;}
+
+.fx_1{
+	background-image: url(../images/fx.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	clear: both;
+	width:100%;
+	height:50px;
+	display:block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	padding-top:5px;
+	margin-top:10px;
+}
+
+.xa_sep{
+	color: #CBCBCB;
+	/*调用:<span class="xa_sep"> | </span> 不要指定宽度,否则有换行时会更宽*/
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.orderby_activity{color: #218CD3;}
+.order_default{ color: #2D4670; }

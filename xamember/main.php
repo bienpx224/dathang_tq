@@ -16,6 +16,13 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/xamember/incluce/session.php');
 $headtitle=$LG['main.headtitle'];//会员中心
 require_once($_SERVER['DOCUMENT_ROOT'].'/xamember/incluce/head.php');
 
+//验证手机版
+if (isMobile()) {
+	$_SESSION['isMobile']=1;$ism=1;$m='/m';
+	echo "<script>top.location.href='/';</script>";
+	exit;
+}
+
 $mr=FeData('member','*',"userid='{$Muserid}'");
 ?>
 <div class="page_ny">

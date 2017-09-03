@@ -23,9 +23,9 @@ if(isMobile()){
 if($Muserid&&$_COOKIE['member_cookie'])
 {
 	echo '<script language=javascript>';
-	echo 'location.href="/xamember/main.php";';
+	echo 'location.href="main.php";';
 	echo '</script>';
-	XAtsto('/xamember/main.php');
+	XAtsto('main.php');
 }
 
 
@@ -57,7 +57,7 @@ $tokenkey= $token->grante_token("memberlogin");
 if($ism)
 {
 	require_once($_SERVER['DOCUMENT_ROOT'].'/m/template/incluce/header.php');
-	require_once($_SERVER['DOCUMENT_ROOT'].'/m/template/incluce/top.php');
+	//require_once($_SERVER['DOCUMENT_ROOT'].'/m/template/incluce/top.php');
 	echo '<link href="/css/xingao_m.css" rel="stylesheet" type="text/css"/>';
 }else{
 	require_once($_SERVER['DOCUMENT_ROOT'].'/template/incluce/header.php');
@@ -66,7 +66,9 @@ if($ism)
 }?>
 
 
-
+<?php
+if (!$ism) {
+?>
 <!--内容开始-->
 <div class="gb_member">
     <div class="login">
@@ -182,3 +184,94 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/js/checkJS.php');//通用验证
 require_once($_SERVER['DOCUMENT_ROOT'].$m.'/template/incluce/footer.php');
 ?>
 <IFRAME src="/public/cache.html" name="cache" width="0" height="0" border=0  marginWidth=0 frameSpacing=0 marginHeight=0  frameBorder=0 noResize scrolling=no vspale="0" style="display:none"></IFRAME>
+
+
+<?php } else {?>
+<style>
+.login-form{
+	width:70%;
+	margin:0 auto;
+}
+
+</style>
+        
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="uh cc-head  ubb bc-border" data-control="HEADER" id="Header">
+                <div class="ub">
+                    <div class="nav-btn" id="nav-left">
+                        <div class="fa fa-1g ub-img1">
+                        </div>
+                    </div>
+                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">登录</h1>
+                    <div class="nav-btn" id="nav-right">
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            
+            
+            <!--content开始-->
+            <div class="uf sc-bg  bc-border" id="content" style="top:4rem;">
+                
+				<form class="login-form" action="login_save.php" method="post">
+            <input name="lx" type="hidden" value="<?=$lx?>">
+            <input name="tokenkey" type="hidden" value="<?=$tokenkey?>">
+                
+                
+                <div class="form-group">
+                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                  
+                    <div class="input-icon">
+                       
+                        <input class="form-control placeholder-no-fix" placeholder="登录账号" name="username" autocomplete="off" maxlength="50" required="" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                    <div class="input-icon">
+                        
+                        <input class="form-control placeholder-no-fix" placeholder="登录密码" name="password" autocomplete="off" maxlength="50" required="" type="password">
+                    </div>
+                </div>
+                
+                                
+                
+                                
+                <div class="form-actions">
+                 <button type="submit" class="btn-block btn btn-danger pull-right input-small"><i class="icon-key"></i> 登  录</button>
+                
+				         <a type="button" href="/api/login/weixin/?ish5=1" style="color:#fff;margin-top.5rem;" class="btn-block btn btn-info pull-right input-small"><i class="icon-comments-alt"></i> 微信登录</a>
+						 
+                
+                <!--<a href="/api/login/qq/" target="_blank"><img src="/images/login_qq.gif" style="margin-bottom:5px; margin-top:5px;"></a>-->
+				 
+     
+                         
+                </div>
+                
+                            
+                <div style="padding-bottom:20rem;font-size:.8rem;width:100%;clear:both;">
+					<br/>
+					
+                    <div style="float:left;width:40%;">
+                        <a href="reg.php"> <i class="icon-user"></i> 注册会员 </span></a>
+					</div>
+                    <div style="float:right;width:40%;">
+                        <a href="getpassword.php"><span class="pull-left"> <i class="icon-question-sign"></i> 忘记密码 </span></a>
+                    </div>
+                </div>
+                
+    
+    
+
+                
+            </form>
+				
+            </div>
+            <!--content结束-->
+			
+        </div>
+<?php }?>
